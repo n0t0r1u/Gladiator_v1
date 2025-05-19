@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgr"
+    tools:context=".MainActivity5"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/cercevebot">
+
+    <ImageButton
+        android:id="@+id/geritusu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/geri"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginStart="25dp"
+            android:id="@+id/profilresim"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/profille"/>
+
+            <TextView
+                android:id="@+id/kadigor"
+                android:layout_marginStart="10dp"
+                android:text="errrr"
+                android:textStyle="bold"
+                android:textColor="@color/siyah"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/tolbar">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recmesaj"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="55dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relati"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_below="@id/recmesaj"
+            app:labelVisibilityMode="unlabeled"
+            android:id="@+id/mesajgirdi"
+            android:layout_marginBottom="2dp"
+            android:padding="10dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Mesajınızı girin..."
+            android:layout_centerVertical="true"
+            android:textColor="@color/siyah"
+            android:background="@drawable/butoncerceve"
+            tools:ignore="NotSibling" />
+
+
+        <ImageButton
+            android:id="@+id/fotoekleme"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="65dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/foto"/>
+
+
+        <ImageView
+            android:id="@+id/gonder"
+            android:layout_marginEnd="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/gonder"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

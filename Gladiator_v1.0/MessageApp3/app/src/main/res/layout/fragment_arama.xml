@@ -1,0 +1,45 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.AramaFragment">
+
+    <!-- Arama Çubuğu ve Görsel -->
+    <LinearLayout
+        android:id="@+id/lineer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/searchyeni" />
+
+        <EditText
+            android:id="@+id/aramabar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/textcerceve"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/siyah"
+            android:singleLine="true"
+            android:hint="Arama"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/arama_rec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lineer"
+        android:clipToPadding="false"
+        android:padding="16dp" />
+</RelativeLayout>

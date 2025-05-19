@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="siyah">#FF000000</color>
+    <color name="beyaz">#FFFFFFFF</color>
+    <color name="mor">#9007AB</color>
+    <color name="mavi">#0B28B3</color>
+    <color name="gri">#6F6D6D</color>
+    <color name="green">#07E907</color>
+    <color name="red">#DC1212</color>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:gravity="center_vertical">
+
+<TextView
+android:id="@+id/participantTextView"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="18sp"
+    android:text="a"
+    android:textColor="@color/siyah"
+    android:ellipsize="end"
+    android:maxLines="1"
+    android:layout_marginBottom="4dp" />
+
+<TextView
+android:id="@+id/lastMessageTextView"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="14sp"
+android:text="a"
+android:textColor="@color/gri"
+android:ellipsize="end"
+android:maxLines="1"
+android:layout_marginBottom="4dp" />
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/chat"/>
+
+<TextView
+android:id="@+id/timestampTextView"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="12sp"
+android:text="a"
+android:textColor="@color/gri"
+android:ellipsize="end"
+android:maxLines="1" />
+    </LinearLayout>
